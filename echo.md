@@ -11,10 +11,10 @@ echo: echo [-neE] [arg ...]
     
     'echo' interprets the following backslash-escaped characters: 以下反斜杠转义字符的解释
       \a	alert (bell) 警报声
-      \b	backspace 退一格
-      \c	suppress further output 不换行
-      \e	escape character 跟\b类似
-      \f	form feed 跟\v类似
+      \b	backspace 删除前一个字符
+      \c	suppress further output 不换行，并且这个参数后面的任何字符（包括参数）都会被忽略掉不打印
+      \e	escape character 删除后一个字符
+      \f	form feed 清除屏幕，效果跟\v相似
       \n	new line 换行
       \r	carriage return 回车
       \t	horizontal tab 水平制表符
